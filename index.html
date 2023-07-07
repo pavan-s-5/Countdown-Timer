@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="shortcut icon" href="./images/cdt-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <header>
+        <p>Countdown Timer</p>
+        <img src="./images/cdt-logo.png" alt="">
+    </header>
+    
+        <div class="container">
+                <div class="input-timer">
+                    <div>
+
+                        <input class="hour" type="number" placeholder="HH"
+                        maxlength="2"
+                        oninput="this.value=this.value.slice(0,maxLength)"
+                        /> 
+                        <span>:</span>
+                        
+                        <input class="minute" type="number" placeholder="MM"
+                        maxlength="2"
+                        oninput="this.value=this.value.slice(0,maxLength)"
+                        /> 
+                        <span>:</span>
+                        
+                        <input class="seconds" type="number" placeholder="SS"
+                        maxlength="2"
+                        oninput="this.value=this.value.slice(0,maxLength)"
+                        /> 
+                        
+                        <input class="ms" type="number" /> 
+                    </div>
+                    
+                    
+                    <div class="buttons">
+                        <button class="Start"> Start </button>
+                        <button class="Stop"> Stop </button>
+                        <button class="Reset"> Reset </button>
+                    </div>
+                    
+                </div>
+        </div>
+        
+
+    <script src="./script.js"></script>
+</body>
+</html>
